@@ -1,0 +1,21 @@
+/* CSS for Dashboard Page */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+}
+
+
+.dashboard-section {
+    margin-bottom: 30px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
