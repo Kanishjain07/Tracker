@@ -120,5 +120,7 @@ def add_period():
         return redirect(url_for('dashboard'))
     return render_template('add_period.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    from os import environ
+    from app import app
+    app.run(debug=False, host='0.0.0.0', port=int(environ.get("PORT", 5000)))
