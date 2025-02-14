@@ -1,21 +1,89 @@
-/* CSS for Dashboard Page */
-body, html {
-    height: 100%;
+/* General Styles */
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/image2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 34px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+}
 
-.dashboard-section {
+/* Centering text */
+.text-center {
+    text-align: center;
+}
+
+/* Dashboard section */
+.row {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
-.card-title {
-    font-size: 1.25rem;
+.col {
+    flex: 1;
+    margin-right: 20px;
 }
 
+.dashboard-section {
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.list-group {
+    padding: 0;
+    list-style: none;
+}
+
+.list-group-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Action buttons */
 .btn-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
 }

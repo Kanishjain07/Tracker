@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Workout</title>
+    <link rel="stylesheet" href="../static/add_workout.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Workout</h2>
+        <form method="POST" action="/add_workout">
+            <div class="input-group">
+                <label for="workout_type">Workout Type</label>
+                <input type="text" id="workout_type" name="workout_type" placeholder="Enter Workout Type" required>
+            </div>
+            <div class="input-group">
+                <label for="duration">Duration (in minutes)</label>
+                <input type="number" id="duration" name="duration" placeholder="Enter Duration" required>
+            </div>
+            <button type="submit" class="btn">Add Workout</button>
+        </form>
+    </div>
+</body>
+</html>
